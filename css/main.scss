@@ -135,23 +135,28 @@ body {
     100% { border-radius: 29% 71% 45% 55% / 72% 29% 71% 28%; }
 }
 @keyframes titleblob {
-    0% { border-radius: 48% 52% 50% 50% / 59% 54% 46% 41%; }
-    25% { border-radius: 64% 36% 66% 34% / 42% 66% 34% 58%;  }
-    50% { border-radius: 61% 39% 57% 43% / 59% 64% 36% 41%;  }
-    75% { border-radius: 66% 34% 74% 26% / 27% 46% 54% 73%;  }
-    100% { border-radius: 48% 52% 50% 50% / 59% 54% 46% 41%; }
+    0% { border-radius: 48% 52% 50% 50% / 59% 54% 46% 41%; transform: translate3d(20px, 20px, 0px);}
+    25% { border-radius: 64% 36% 66% 34% / 42% 66% 34% 58%; transform: translate3d(1000px, 1000px, 0px);}
+    50% { border-radius: 61% 39% 57% 43% / 59% 64% 36% 41%; transform: translate3d(1500px, 1100px, 0px); }
+    75% { border-radius: 66% 34% 74% 26% / 27% 46% 54% 73%; transform: translate3d(2000px, 3000px, 0px); }
+    100% { border-radius: 48% 52% 50% 50% / 59% 54% 46% 41%; transform: translate3d(20px, 20px, 0px); }
 }
 @keyframes titleblob2 {
     0% { border-radius: 16% 100% 27% 70% / 24% 48% 61% 66%; }
-    25% { border-radius: 100% 100% 27% 70% / 100% 48% 61% 66% ;  }
+    25% { border-radius: 100% 100% 27% 70% / 100% 48% 61% 66%;  }
     50% { border-radius: 16% 100% 27% 70% / 24% 48% 61% 66%;  }
     75% { border-radius: 100% 100% 27% 70% / 100% 48% 61% 66%;  }
     100% { border-radius: 16% 100% 27% 70% / 24% 48% 61% 66%; }
 }
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+
+}
 
 // Blobs
 .divblob {
-    width: 27vw;
+    width: 27em;
     height: 27em;
     position: absolute;
     background-color: lightblue;
@@ -182,15 +187,18 @@ body {
     animation: blobanimation1 10s infinite ease-in-out;
 }
 .titleblob  {
+    //transform: translate3d(20px, 20px, 0px);
     position: absolute;
-    width: 40vw;
-    height: 60vh;
-    right: 13em;
+    width: 20em;
+    height: 20em;
+    right: 15em;
     top: 4em;
     z-index: 1;
     background-color: purple;
     border-radius: 48% 52% 50% 50% / 59% 54% 46% 41%;
-    animation: titleblob 10s infinite ease-in-out;
+    //animation: titleblob 15s infinite ease-in-out;
+    animation: myOrbit 5s infinite ease-in-out;
+    opacity: 0.5;
 }
 .titleblob2  {
     position: absolute;
