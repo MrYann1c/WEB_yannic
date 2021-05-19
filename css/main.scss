@@ -135,11 +135,11 @@ body {
     100% { border-radius: 29% 71% 45% 55% / 72% 29% 71% 28%; }
 }
 @keyframes titleblob {
-    0% { border-radius: 48% 52% 50% 50% / 59% 54% 46% 41%; transform: translate3d(20px, 20px, 0px);}
-    25% { border-radius: 64% 36% 66% 34% / 42% 66% 34% 58%; transform: translate3d(1000px, 1000px, 0px);}
-    50% { border-radius: 61% 39% 57% 43% / 59% 64% 36% 41%; transform: translate3d(1500px, 1100px, 0px); }
-    75% { border-radius: 66% 34% 74% 26% / 27% 46% 54% 73%; transform: translate3d(2000px, 3000px, 0px); }
-    100% { border-radius: 48% 52% 50% 50% / 59% 54% 46% 41%; transform: translate3d(20px, 20px, 0px); }
+    0% { border-radius: 48% 52% 50% 50% / 59% 54% 46% 41%; transform: translate3d(20px, 20px, 5px);}
+    25% { border-radius: 64% 36% 66% 34% / 42% 66% 34% 58%; transform: translate3d(30px, 30px, 0px);}
+    50% { border-radius: 61% 39% 57% 43% / 59% 64% 36% 41%; transform: translate3d(10px, 10px, 10px); }
+    75% { border-radius: 66% 34% 74% 26% / 27% 46% 54% 73%; transform: translate3d(40px, 40px, 0px); }
+    100% { border-radius: 48% 52% 50% 50% / 59% 54% 46% 41%; transform: translate3d(20px, 20px, 5px); }
 }
 @keyframes titleblob2 {
     0% { border-radius: 16% 100% 27% 70% / 24% 48% 61% 66%; }
@@ -159,9 +159,10 @@ body {
     width: 27em;
     height: 27em;
     position: absolute;
-    background-color: lightblue;
+    background-color: black;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    margin: 15em 0 0 10em;
+    top: 50em;
+    left: 40em;
     animation: blobanimation 10s infinite ease-in-out;
 }
 .divblob1 {
@@ -187,7 +188,7 @@ body {
     animation: blobanimation1 10s infinite ease-in-out;
 }
 .titleblob  {
-    //transform: translate3d(20px, 20px, 0px);
+    transform: translate3d(20px, 20px, 5px);
     position: absolute;
     width: 20em;
     height: 20em;
@@ -196,8 +197,8 @@ body {
     z-index: 1;
     background-color: purple;
     border-radius: 48% 52% 50% 50% / 59% 54% 46% 41%;
-    //animation: titleblob 15s infinite ease-in-out;
-    animation: myOrbit 5s infinite ease-in-out;
+    animation: titleblob 15s infinite ease-in-out;
+    // animation: myOrbit 5s infinite ease-in-out;
     opacity: 0.5;
 }
 .titleblob2  {
@@ -240,7 +241,7 @@ article {
     float: left;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 }
 .title-container {
     display: flex;
@@ -278,25 +279,35 @@ article {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 1em 0 0 50em;
 }
 .about-container > div {
     z-index: 10;
 }
+.about-title {
+    color: wheat;
+}
+.about-text {
+    width: 15vw;
+}
 .img > div {
-    position: absolute;
-    border-radius: 29% 71% 45% 55% / 72% 29% 71% 28%;
-    width: 40%;
-    height: 60%;
+    position: relative;
+    // border-radius: 29% 71% 45% 55% / 72% 29% 71% 28%;
+    width: 100%;
+    height: 100%;
+    margin-left: 5em;
+    // margin-top: 47%;
     background-image: url("../../images/mini_front.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: imgblob 15s infinite ease-in-out;
+    // animation: imgblob 15s infinite ease-in-out;
 }
 
 p {
     margin: 0;
     width: 100%;
+    color: wheat;
 }
 
 .blob {
