@@ -9,6 +9,8 @@ body {
   scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
 }
 
 .container {
