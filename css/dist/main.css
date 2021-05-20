@@ -26,7 +26,7 @@ body {
 .menu-icon > span {
   width: 50px;
   height: 3px;
-  background: lightblue;
+  background: wheat;
   display: block;
   transition: all 0.3s ease-in-out;
 }
@@ -188,6 +188,23 @@ body {
     transform: rotate(360deg) translateX(150px) rotate(-360deg);
   }
 }
+@keyframes title {
+  0% {
+    transform: translate3d(20px, 20px, 5px);
+  }
+  25% {
+    transform: translate3d(25px, -50px, 10px);
+  }
+  50% {
+    transform: translate3d(15px, 20px, 15px);
+  }
+  75% {
+    transform: translate3d(20px, 30px, 10px);
+  }
+  100% {
+    transform: translate3d(20px, 20px, 5px);
+  }
+}
 .divblob {
   width: 27em;
   height: 27em;
@@ -287,6 +304,8 @@ article {
   font-size: 5em;
   text-transform: uppercase;
   color: wheat;
+  transform: translate3d(20px, 20px, 5px);
+  animation: title 10s infinite;
 }
 
 .scroll {
