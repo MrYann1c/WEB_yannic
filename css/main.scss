@@ -9,6 +9,12 @@ body {
     //-webkit-overflow-scrolling: touch;
     z-index: -10;
 }
+:root {
+    scroll-snap-type: mandatory;
+    // scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
 
 // Burger navigation
 .container {
@@ -169,7 +175,7 @@ body {
     position: absolute;
     background-color: black;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    top: 50em;
+    top: 80em;
     left: 40em;
     animation: blobanimation 10s infinite ease-in-out;
 }
@@ -226,7 +232,7 @@ section {
     padding: 0;
     height: 100vh;
     color: black;
-    // scroll-snap-align: start;
+    scroll-snap-align: start;
     scroll-behavior: smooth;
 
     &:nth-of-type(1) {
