@@ -258,6 +258,13 @@ article {
     display: flex;
     justify-content: center;
     // align-items: center;
+    &:nth-of-type(1) {
+
+    } 
+    &:nth-of-type(2) {
+        
+    }
+
 }
 .title-container {
     display: flex;
@@ -270,7 +277,7 @@ article {
 
 .main-title {
     margin: 0;
-    font-size: 4vw;
+    font-size: 5vw;
     text-transform: uppercase;
     color: wheat;
     // transform: translate3d(20px, 20px, 5px);
@@ -304,6 +311,7 @@ article {
     z-index: 10;
 }
 .about-title {
+    margin: 0 0 0 5vw;
     width: 20vw;
     color: wheat;
     font-size: 3vw;
@@ -337,3 +345,20 @@ p {
     margin: 5em 0 0 5em;
     width: 20vw;
 }
+
+// MEDIA
+
+@media screen and (max-width: 970px){
+    .main-title {
+        font-size: 8vw;
+    }
+    p {
+        font-size: 5vw;
+        width: 70vw;
+    }
+    .about-title {
+        font-size: 8vw;
+        width: 50vw;
+    }
+}
+
