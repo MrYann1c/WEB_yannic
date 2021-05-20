@@ -7,8 +7,14 @@
     <title>HOME</title>
     <link rel="icon" type="image/png" href="images/mini_logo.png" sizes="32x32">
     <link rel="stylesheet" href="css/dist/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
+    <script>
+        AOS.init();
+      </script>
     <!-- <div class="menublob"></div> -->
     <!-- <div class="titleblob"></div> -->
     <!-- <div class="titleblob2"></div> -->
@@ -35,7 +41,8 @@
               <span class="line-3"></span>
             </div>
           </div>
-        <div class="title-container">
+        <div class="title-container" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <div style="z-index: 100;">
                 <!-- <video autoplay muted loop id="myVideo">
                     <source src="videos/mini_follow.mp4" type="video/mp4">
@@ -52,7 +59,8 @@
         </div> -->
         <article class="about">
             <div class="about-container">
-                <div style="float: left; width: 50%;">
+                <div style="float: left; width: 50%;" data-aos="fade-up"
+                data-aos-duration="3000">
                     <h1 class="about-title">Yannic Haas</h1>
                     <p class="about-line" style="font-size:2em; height: 30px;">-</p>
                     <div class="about-text">
