@@ -175,8 +175,8 @@ body {
     position: absolute;
     background-color: black;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    top: 80em;
-    left: 40em;
+    top: 90em;
+    left: 20em;
     animation: blobanimation 10s infinite ease-in-out;
 }
 .divblob1 {
@@ -268,11 +268,11 @@ article {
 
 .main-title {
     margin: 0;
-    font-size: 5em;
+    font-size: 4vw;
     text-transform: uppercase;
     color: wheat;
-    transform: translate3d(20px, 20px, 5px);
-    animation: title 10s infinite;
+    // transform: translate3d(20px, 20px, 5px);
+    // animation: title 10s infinite;
 }
 .scroll {
     display: flex;
@@ -295,13 +295,16 @@ article {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1em 0 0 50em;
+    margin-top: 30vh;
+    width: 50vw;
 }
 .about-container > div {
     z-index: 10;
 }
 .about-title {
+    width: 20vw;
     color: wheat;
+    font-size: 3vw;
 }
 .about-text {
     width: 15vw;
@@ -313,17 +316,18 @@ article {
     height: 100%;
     margin-left: 5em;
     // margin-top: 47%;
-    background-image: url("../../images/mini_front.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url("../../images/mini_front.jpg");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     // animation: imgblob 15s infinite ease-in-out;
 }
 
 p {
     margin: 0;
-    width: 100%;
+    width: 40vw;
     color: wheat;
+    font-size: 2vw;
 }
 
 .blob {
