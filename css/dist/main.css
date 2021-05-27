@@ -19,8 +19,8 @@ body {
 }
 
 :root {
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: proximity;
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
