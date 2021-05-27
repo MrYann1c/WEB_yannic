@@ -376,13 +376,13 @@ p {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 5em;
+    padding: 10em;
     justify-content: center;
 }
 .column {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
-    max-width: 75%;
+    max-width: 100%;
     padding: 0 4px;
 }
 .column > img {
