@@ -251,7 +251,7 @@ body {
 
 .menublob {
   z-index: 1001;
-  position: fixed;
+  position: absolute;
   width: 9em;
   height: 9em;
   background-color: purple;
