@@ -291,10 +291,10 @@ section {
   padding: 0;
   height: 100vh;
   color: black;
-  scroll-snap-align: start;
   scroll-behavior: smooth;
 }
 section:nth-of-type(1) {
+  scroll-snap-align: start;
   background-color: #111A23;
   height: 100vh;
 }
@@ -410,7 +410,7 @@ p {
   -ms-flex-wrap: wrap;
   /* IE10 */
   flex-wrap: wrap;
-  padding: 10em;
+  padding: 2em;
   justify-content: center;
 }
 
@@ -422,8 +422,21 @@ p {
   padding: 0 4px;
 }
 
+.column-wide {
+  -ms-flex: 100%;
+  /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
 .column > img {
-  border-radius: 5px;
+  margin-top: 0.5em;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column-wide > img {
   margin-top: 0.5em;
   vertical-align: middle;
   width: 100%;
@@ -440,6 +453,12 @@ p {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .column-wide {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;

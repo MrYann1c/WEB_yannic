@@ -4,7 +4,6 @@
 *::-webkit-scrollbar {
     display: none;
 }
-  
   /* Hide scrollbar for IE, Edge and Firefox */
   * {
     -ms-overflow-style: none;  /* IE and Edge */
@@ -243,10 +242,10 @@ section {
     padding: 0;
     height: 100vh;
     color: black;
-    scroll-snap-align: start;
     scroll-behavior: smooth;
 
     &:nth-of-type(1) {
+        scroll-snap-align: start;
         // background-image: url("../../images/mini_front.jpg");
         // background-position: center;
         // background-repeat: no-repeat;
@@ -371,12 +370,50 @@ p {
     }
 }
 
+
+// .grid-container {
+//     display: grid;
+//     gap: 1rem;
+//     padding: 1em;
+//     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+//     grid-auto-rows: 240px;
+// }
+// .card {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     background: black;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     height: 100%;
+//     width: 100%;
+//     overflow: hidden;
+//     transition: all 500ms;
+//     padding: 0;
+//     margin: 0;
+// }
+// @media (min-width: 600px) {
+//     .card-tall {
+//         grid-row: span 2 / auto;
+//     }
+//     .card-wide {
+//         grid-column: span 2 / auto;
+//     }
+//     .pano {
+//         grid-column: span 3 / auto;
+//         grid-row: span 3 / auto;
+
+//     }
+// }
+
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 10em;
+    padding: 2em;
     justify-content: center;
 }
 .column {
@@ -385,12 +422,23 @@ p {
     max-width: 100%;
     padding: 0 4px;
 }
+.column-wide {
+    -ms-flex: 100%; /* IE10 */
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
 .column > img {
-    border-radius: 5px;
     margin-top: 0.5em;
     vertical-align: middle;
     width: 100%;
 }
+.column-wide > img {
+    margin-top: 0.5em;
+    vertical-align: middle;
+    width: 100%;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .column {
@@ -406,4 +454,13 @@ p {
       flex: 100%;
       max-width: 100%;
     }
+    .column-wide {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
   }
+
+
+
+
