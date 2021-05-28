@@ -13,8 +13,8 @@
 </head>
 <body>
 
-    <div class="menublob"></div>
-    <div class="titleblob"></div>
+    <!-- <div class="menublob"></div>
+    <div class="titleblob"></div> -->
     <!-- <div class="titleblob2"></div> -->
 
     <div class="navigation">
@@ -51,29 +51,28 @@
         <!-- <div class="scroll"><a href="#about" class="down-arrow">&#5167;</a></div> -->
     </section>
     <section id="about" style="overflow: visible; height: 100%;">
+        <div id="preview-img" onclick="imgClose()"></div>
         <div class="row">
             <div class="column" style="flex: 100%;">
-                <img src="images/pano4.webp" alt="pano4" class="pano" data-aos="zoom-in">
-                 <!-- <img src="images/pano1.we" alt="pano1" class="pano" data-aos="zoom-in"> -->
-                <img src="images/pano2.webp" alt="pano2" class="pano" data-aos="zoom-in">
+                <img id="pano4" onclick="imgPreview(this.id)" src="images/pano4.webp" alt="pano4" class="pano" data-aos="zoom-in">
+                <img id="pano2" onclick="imgPreview(this.id)" src="images/pano2.webp" alt="pano2" class="pano" data-aos="zoom-in">
             </div>
             <div class="column">
-                <img src="images/moose.webp" alt="moose" data-aos="zoom-in">
-                <img src="images/münchebuchsee.webp" alt="münchebuchsee" data-aos="zoom-in">
-                <img src="images/shoppy.webp" alt="shoppy" data-aos="zoom-in">
-                <img src="images/mini_wash.webp" alt="mini_wash" data-aos="zoom-in">
+                <img id="moose" onclick="imgPreview(this.id)" src="images/moose.webp" alt="moose" data-aos="zoom-in">
+                <img id="münchebuchsee" onclick="imgPreview(this.id)" src="images/münchebuchsee.webp" alt="münchebuchsee" data-aos="zoom-in">
+                <img id="mini_wash" onclick="imgPreview(this.id)" src="images/mini_wash.webp" alt="mini_wash" data-aos="zoom-in">
+                <img id="lengnau1" onclick="imgPreview(this.id)" src="images/lengnau1.webp" alt="lengnau1" data-aos="zoom-in">
             </div>
             <div class="column" >
-                <img src="images/lengnau1.webp" alt="lengnau1" data-aos="zoom-in">
-                <img src="images/mini_front.webp" alt="mini-front"data-aos="zoom-in">
-            
-                <img src="images/lengnau.webp" alt="lengnau" data-aos="zoom-in">
-                <img src="images/schernelz.webp" alt="schernelz" data-aos="zoom-in">
+                <img id="shoppy" onclick="imgPreview(this.id)" src="images/shoppy.webp" alt="shoppy" data-aos="zoom-in">
+                <img id="mini-front" onclick="imgPreview(this.id)" src="images/mini_front.webp" alt="mini-front"data-aos="zoom-in">
+                <img id="schernelz" onclick="imgPreview(this.id)" src="images/schernelz.webp" alt="schernelz" data-aos="zoom-in">
+                <img id="lengnau" onclick="imgPreview(this.id)" src="images/lengnau.webp" alt="lengnau" data-aos="zoom-in">
             </div>
             <div class="column-wide">
-                <img src="images/pano.webp" alt="pano" class="pano" data-aos="zoom-in">
-                <img src="images/pano5.webp" alt="pano5" class="pano" data-aos="zoom-in">
-                <img src="images/pano3.webp" alt="pano3" class="pano" data-aos="zoom-in">
+                <img id="pano" onclick="imgPreview(this.id)" src="images/pano.webp" alt="pano" class="pano" data-aos="zoom-in">
+                <img id="pano5" onclick="imgPreview(this.id)" src="images/pano5.webp" alt="pano5" class="pano" data-aos="zoom-in">
+                <img id="pano3" onclick="imgPreview(this.id)" src="images/pano3.webp" alt="pano3" class="pano" data-aos="zoom-in">
             </div>
         </div>
     </section>

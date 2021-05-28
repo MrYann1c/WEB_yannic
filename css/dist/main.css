@@ -19,8 +19,8 @@ body {
 }
 
 :root {
-  scroll-snap-type: proximity;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
@@ -294,7 +294,6 @@ section {
   scroll-behavior: smooth;
 }
 section:nth-of-type(1) {
-  scroll-snap-align: start;
   background-color: #111A23;
   height: 100vh;
 }
@@ -463,4 +462,20 @@ p {
     flex: 100%;
     max-width: 100%;
   }
+}
+.preview-animation {
+  width: 100vw;
+  height: 100vh;
+}
+
+#preview-img {
+  position: fixed;
+  z-index: 10000;
+  height: 0%;
+  width: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 500ms;
+  top: 0;
 }
