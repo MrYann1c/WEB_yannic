@@ -399,6 +399,7 @@ p {
     margin-top: 0.5em;
     vertical-align: middle;
     width: 100%;
+    cursor: pointer;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -429,11 +430,14 @@ p {
 #preview-img {
     position: fixed;
     z-index: 10000;
-    height: 0%;
-    width: 0%;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition: all 500ms;
+    transition: opacity 400ms;
     top: 0;
+    left: 0;
 }

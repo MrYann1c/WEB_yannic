@@ -35,23 +35,52 @@ function toggleMenuIcon() {
 }
 
 function imgPreview(id) {
-  // const previewwidth = imgpreview.style.width;
   var src = document.getElementById(id).getAttribute('src');
   var about = document.getElementById('about');
   var img = document.getElementById(id);
-  var finalsrc = '"' + "url('" + src + "')" + '"'; //await sleep(500);
-  // preview.classList.toggle('preview-animation');
+  var finalsrc = '"' + "url('" + src + "')" + '"';
+  var mediawidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
 
-  preview.style.backgroundImage = "url('" + src + "')"; //about.style.backgroundColor = "black"
+  if (id == "mini_wash") {
+    if (mediawidth > "1000") {
+      preview.style.width = "50%";
+      preview.style.left = "25%";
+    }
+  }
 
-  preview.style.height = "100vh";
-  preview.style.width = "100vw";
+  preview.style.backgroundImage = "url('" + src + "')";
+  preview.style.visibility = "visible";
+  preview.style.opacity = "1"; // preview.style.height = "100vh";
+  // preview.style.width = "100vw";
 }
 
 function imgClose() {
-  imgclose = document.getElementById('preview-img');
-  imgclose.style.height = "0vh";
-  imgclose.style.width = "0vw";
+  return regeneratorRuntime.async(function imgClose$(_context2) {
+    while (1) {
+      switch (_context2.prev = _context2.next) {
+        case 0:
+          imgwidth = document.getElementById('preview-img').offsetWidth;
+          imgclose = document.getElementById('preview-img');
+          preview.style.opacity = "0";
+          _context2.next = 5;
+          return regeneratorRuntime.awrap(sleep(400));
+
+        case 5:
+          preview.style.visibility = "hidden";
+
+          if (imgwidth == "1012") {
+            preview.style.width = "100%";
+            preview.style.left = "0";
+          } // imgclose.style.height = "0vh";
+          // imgclose.style.width = "0vw";
+
+
+        case 7:
+        case "end":
+          return _context2.stop();
+      }
+    }
+  });
 }
 
 menuIcon.addEventListener('click', toggleMenuIcon);
