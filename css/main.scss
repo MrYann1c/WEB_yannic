@@ -124,7 +124,16 @@ body {
     color: white;
     font-size: 2.5em;
     text-transform: uppercase;
+    transition: 200ms;
     // top: 8.5em;
+}
+.nav-links > a:hover {
+    color: wheat;
+    text-transform: lowercase;
+}
+.activelink {
+    text-transform: lowercase;
+    color: wheat;
 }
 
 
