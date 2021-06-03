@@ -80,6 +80,15 @@ body {
   justify-self: end;
 }
 
+.activelink {
+  text-decoration-line: line-through;
+  color: wheat;
+  position: relative;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  transition: 200ms;
+}
+
 .navigation {
   position: fixed;
   display: flex;
@@ -113,7 +122,7 @@ body {
   opacity: 1;
 }
 
-.nav-links > a {
+.links {
   position: relative;
   text-decoration: none;
   color: white;
@@ -124,12 +133,28 @@ body {
 
 .nav-links > a:hover {
   color: wheat;
-  text-transform: lowercase;
 }
 
-.activelink {
-  text-transform: lowercase;
-  color: wheat;
+.topBtn {
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: -30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: wheat;
+  color: #111A23;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  transition: 200ms;
+  opacity: 0;
+}
+
+.topBtn:hover {
+  opacity: 1;
 }
 
 @keyframes open {
@@ -312,6 +337,14 @@ section:nth-of-type(2) {
   height: 100vh;
   background-color: #111A23;
 }
+section:nth-of-type(3) {
+  background-color: #111A23;
+  height: 100vh;
+}
+section:nth-of-type(4) {
+  background-color: #111A23;
+  height: 100vh;
+}
 
 article {
   z-index: 3;
@@ -493,4 +526,16 @@ p {
   transition: opacity 400ms;
   top: 0;
   left: 0;
+}
+
+.img-pano {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.img-pano > img {
+  width: 80%;
 }
