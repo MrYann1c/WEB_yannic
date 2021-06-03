@@ -19,8 +19,8 @@ body {
 }
 
 :root {
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: proximity;
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
@@ -155,6 +155,7 @@ body {
 
 .topBtn:hover {
   opacity: 1;
+  text-decoration: wavy;
 }
 
 @keyframes open {
@@ -262,6 +263,14 @@ body {
     transform: translate3d(20px, 20px, 5px);
   }
 }
+@keyframes main-onload {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 80vh;
+  }
+}
 .divblob {
   width: 27em;
   height: 27em;
@@ -325,13 +334,14 @@ body {
 section {
   z-index: -10;
   padding: 0;
-  height: 100vh;
+  height: 80vh;
   color: black;
   scroll-behavior: smooth;
+  scroll-snap-align: start;
 }
 section:nth-of-type(1) {
   background-color: #111A23;
-  height: 100vh;
+  height: 80vh;
 }
 section:nth-of-type(2) {
   height: 100vh;
@@ -436,11 +446,6 @@ p {
     font-size: 8vw;
   }
 
-  p {
-    font-size: 5vw;
-    width: 70vw;
-  }
-
   .about-title {
     font-size: 8vw;
     width: 50vw;
@@ -533,9 +538,24 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
 }
 
 .img-pano > img {
-  width: 80%;
+  width: 100%;
+  border-top: 2px solid wheat;
+}
+
+.footer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content > a {
+  display: block;
+  color: wheat;
+  text-decoration: none;
 }
