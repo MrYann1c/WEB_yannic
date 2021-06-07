@@ -74,4 +74,26 @@ function topFunction() {
   }
 
 
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("slideImg");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.position = "absolute";
+      x[i].style.visibility = "hidden";
+      x[i].style.opacity = "0";
+    }
+    x[slideIndex-1].style.position = "relative";
+    x[slideIndex-1].style.visibility = "visible";
+    x[slideIndex-1].style.opacity = "1";  
+  }
+
 menuIcon.addEventListener('click', toggleMenuIcon);
