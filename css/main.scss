@@ -420,37 +420,37 @@ p {
     }
 }
 
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 2em;
-    justify-content: center;
-}
-.column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 100%;
-    padding: 0 4px;
-}
-.column-wide {
-    -ms-flex: 100%; /* IE10 */
-    flex: 100%;
-    max-width: 100%;
-    padding: 0 4px;
-}
-.column > img {
-    margin-top: 0.5em;
-    vertical-align: middle;
-    width: 100%;
-}
-.column-wide > img {
-    margin-top: 0.5em;
-    vertical-align: middle;
-    width: 100%;
-    cursor: pointer;
-}
+// .row {
+//     display: -ms-flexbox; /* IE10 */
+//     display: flex;
+//     -ms-flex-wrap: wrap; /* IE10 */
+//     flex-wrap: wrap;
+//     padding: 2em;
+//     justify-content: center;
+// }
+// .column {
+//     -ms-flex: 25%; /* IE10 */
+//     flex: 25%;
+//     max-width: 100%;
+//     padding: 0 4px;
+// }
+// .column-wide {
+//     -ms-flex: 100%; /* IE10 */
+//     flex: 100%;
+//     max-width: 100%;
+//     padding: 0 4px;
+// }
+// .column > img {
+//     margin-top: 0.5em;
+//     vertical-align: middle;
+//     width: 100%;
+// }
+// .column-wide > img {
+//     margin-top: 0.5em;
+//     vertical-align: middle;
+//     width: 100%;
+//     cursor: pointer;
+// }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -499,12 +499,14 @@ p {
     justify-content: center;
     align-items: center;
     height: auto;
-    transition: 200ms;
+    border: none;
 }
 
 .img-pano > img {
+    border: none;
     width: 100%;
-    border-top: 2px solid wheat;
+    // border-top: 2px solid wheat;
+    transition: 200ms;
 }
 // #pano4 {
 
@@ -601,5 +603,4 @@ p {
     text-decoration: none;
 }
 .slideImg {
-    transition: 200ms;
 }
