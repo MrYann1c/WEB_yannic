@@ -505,25 +505,9 @@ p {
 .img-pano > img {
     border: none;
     width: 100%;
+    max-height: 80vh;
     // border-top: 2px solid wheat;
-    transition: 200ms;
 }
-// #pano4 {
-
-// }
-// #pano {
-//     visibility: hidden;
-//     opacity: 1;
-//     width: 0%;
-//     height: 0%;
-// }
-// #pano2 {
-//     visibility: hidden;
-//     opacity: 0;
-//     width: 0%;
-//     height: 0%;
-// }
-
 
 .slide-right {
     z-index: 1000;
@@ -580,15 +564,7 @@ p {
 .slideBtn:hover {
     opacity: 1;
 }
-// .arrow-photos {
-//     display: flex;
-//     position: absolute;
-//     justify-content: center;
-//     width: 100%;
-//     margin-top: 15vh;
-//     color: wheat;
-//     font-size: 20px;
-// }
+
 
 .footer-container {
     width: 100%;
@@ -596,11 +572,18 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: wheat;
 }
-.footer-content > a {
+.footer-links {
     display: block;
-    color: wheat;
+    color: #111A23;
     text-decoration: none;
+    text-transform: uppercase;
+}
+.footer-middle {
+    color: #111A23;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .slideImg {
 }

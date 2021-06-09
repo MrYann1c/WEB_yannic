@@ -506,7 +506,7 @@ p {
 .img-pano > img {
   border: none;
   width: 100%;
-  transition: 200ms;
+  max-height: 80vh;
 }
 
 .slide-right {
@@ -576,10 +576,18 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: wheat;
 }
 
-.footer-content > a {
+.footer-links {
   display: block;
-  color: wheat;
+  color: #111A23;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-middle {
+  color: #111A23;
+  padding-left: 10px;
+  padding-right: 10px;
 }

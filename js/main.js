@@ -91,7 +91,7 @@ menuIcon.addEventListener('click', toggleMenuIcon);
       x[i].style.visibility = "hidden";
       x[i].style.opacity = "0";
     }
-        x[slideIndex-1].style.transition = "200ms ease";
+        x[slideIndex-1].style.transition = "2s ease";
         x[slideIndex-1].style.position = "relative";
         x[slideIndex-1].style.visibility = "visible";
         x[slideIndex-1].style.opacity = "1";  
