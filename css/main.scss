@@ -174,11 +174,11 @@ section {
     height: 80vh;
     color: black;
     scroll-behavior: smooth;
-    scroll-snap-align: start;
 
     &:nth-of-type(1) {
         background-color: #111A23;
         height: 80vh;
+        scroll-snap-align: start;
     }
     &:nth-of-type(2) {
         height: 100vh;
@@ -194,9 +194,19 @@ section {
         height: 100vh;
     }
 }
-@media screen and (max-width: 600px){
-    section { scroll-snap-align: stop; }
- }
+#photo-start {
+    height: 80vh;
+}
+#pano-sec {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 1000px) {
+    #pano-sec { height: 20vh; }
+    #photo-start { height: 60vh; }
+}
 
 article {
     z-index: 3;
