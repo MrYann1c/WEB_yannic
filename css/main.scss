@@ -341,7 +341,10 @@ p {
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
+    -webkit-overflow-x: auto;
+    -webkit-overflow-y: hidden;
     scroll-snap-type: x mandatory;
+    -webkit-scroll-snap-type: x mandatory;
     white-space: nowrap;
 }
 .gallery-container > img {
@@ -349,6 +352,8 @@ p {
     max-width: 75%;
     height: auto;
     scroll-snap-align: none center;
+    -webkit-scroll-snap-align: none center;
+
 }
 @media screen and (max-width: 900px) {
     .gallery-container > img {
