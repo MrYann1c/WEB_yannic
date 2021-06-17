@@ -54,7 +54,7 @@ body {
 .menu-icon > span {
   width: 50px;
   height: 3px;
-  background: wheat;
+  background: silver;
   display: block;
   transition: all 0.3s ease-in-out;
 }
@@ -217,6 +217,14 @@ section:nth-of-type(4) {
   align-items: center;
 }
 
+#blog-start {
+  height: 80vh;
+}
+
+#blog-sec {
+  height: 200vh;
+}
+
 @media screen and (max-width: 1100px) {
   #pano-sec {
     height: 20vh;
@@ -226,19 +234,18 @@ section:nth-of-type(4) {
     height: 60vh;
   }
 
+  #blog-start {
+    height: 65vh;
+  }
+
+  #blog-sec {
+    height: auto;
+  }
+
   .gallery-container::-webkit-scrollbar {
     display: none;
   }
 }
-article {
-  z-index: 3;
-  width: 49%;
-  height: 100%;
-  float: left;
-  display: flex;
-  justify-content: center;
-}
-
 .title-container {
   display: flex;
   justify-content: center;
@@ -252,7 +259,8 @@ article {
   margin: 0;
   font-size: 5vw;
   text-transform: uppercase;
-  color: wheat;
+  color: silver;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 .about-container {
@@ -287,16 +295,9 @@ article {
   margin-left: 5em;
 }
 
-p {
-  margin: 0;
-  width: 40vw;
-  color: wheat;
-  font-size: 2vw;
-}
-
 @media screen and (max-width: 970px) {
   .main-title {
-    font-size: 8vw;
+    font-size: 15vw;
   }
 
   .about-title {
@@ -370,6 +371,7 @@ p {
 
 .gallery-container {
   width: 100%;
+  height: auto;
   overflow-x: auto;
   overflow-y: scroll;
   -webkit-overflow-x: auto;
@@ -437,4 +439,60 @@ p {
 
 #left {
   left: 5em;
+}
+
+.blog-article {
+  width: 70%;
+  margin-top: 40vh;
+}
+
+.blog-links {
+  color: silver;
+  text-decoration: none;
+  transition: all 500ms;
+  font-size: 1.5rem;
+}
+
+.blog-links:hover {
+  color: white;
+}
+
+.blog-title {
+  font-size: 3vw;
+  color: silver;
+  margin: 0 0 5px 0;
+}
+
+.blog-text {
+  color: white;
+  width: 75%;
+  font-size: 1.2vw;
+}
+
+li {
+  list-style: none;
+  color: lightblue;
+}
+
+ul {
+  padding: 0;
+}
+
+.blog-line {
+  width: 10%;
+  padding: 0;
+  height: 5px;
+  background-color: silver;
+  margin: 0;
+}
+
+.article-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
