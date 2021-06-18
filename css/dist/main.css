@@ -501,7 +501,7 @@ ul {
 .article-wrap {
   display: flex;
   justify-content: center;
-  height: 50rem;
+  height: 60%;
 }
 
 .blog-wrap {
@@ -550,4 +550,10 @@ ul {
   .blog-links {
     font-size: 100%;
   }
+}
+.m4-video {
+  width: 75%;
+  -webkit-box-shadow: 20px 20px 0px 1px wheat;
+  -moz-box-shadow: 20px 20px 0px 1px wheat;
+  box-shadow: 20px 20px 0px 1px wheat;
 }
